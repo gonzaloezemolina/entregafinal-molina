@@ -1,0 +1,29 @@
+
+
+.portada-texto{
+
+
+    background-image: url(../img/3132-h0.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    font-family: "Bebas";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+}
+
+.productos-texto{
+    padding: 2rem;
+    font-family: "Knockout";
+    font-size: 17px;
+    text-align: center;
+}

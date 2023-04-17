@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Store</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./img/69966.ico">
+</head>
+<body>
+<!-- Navbar -->
+    <header>
+        <div class="logo-marca">
+            <p>FITNESS STORE</p>
+        </div>
+        <div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li>
+                        <button id="boton__carrito">Ir al carrito <span id="contador__carrito" class="contador__carrito">0</span> </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+<!-- main content -->
+    <main>
+        <div class="portada-texto">
+            <h1 data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">SUPER SALE DE LANZAMIENTO</h1>
+            <p>SHOP NOW</p>
+        </div>
+
+        <section class="productos-texto">
+            <div data-aos="fade-right">
+                <p>NUESTROS PRODUCTOS</p>
+            </div>
+        </section>
+        <!-- product targets -->
+        <section id="contenedor-productos" class="container-productos">
+            <!-- targets from javascript -->
+        </section>
+    </main>
+
+
+    <!-- kart -->
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="bi bi-x-circle"></i></button>
+            <div id="carrito-contenedor">
+                <!-- <div class="productoEnCarrito">
+                    <p>Titulo</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="bi bi-trash-fill"></i></button>
+                </div> -->
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-vaciar">Vaciar carrito</button>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer>
+        <small>Made with ♥ by Gonzalo Molina</small>
+    </footer>
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./index.js"></script>
+    <script src="./carrito.js"></script>
+</body>
+</html>

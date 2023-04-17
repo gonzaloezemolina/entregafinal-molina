@@ -1,0 +1,48 @@
+.container-productos{
+padding-top: 25px;
+padding-bottom: 25px;
+display: grid;
+grid-gap: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+justify-items: center;
+}
+
+
+
+.producto{
+    width: 250px;
+    height: 370px;
+    padding: 20px;
+    text-align: center;
+    font-family: "Bebas";
+    &__descripcion{
+        padding-bottom: 10px;
+    }
+    &__price{
+        font-weight: bold;
+    }
+}
+
+.producto__img{
+    width: 200px;
+    height: 220px;
+}
+
+
+@media(min-width:580px){
+    .container-productos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media(min-width:1000px){
+    .container-productos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
